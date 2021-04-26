@@ -1,0 +1,11 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model UrlModel
+
+<div class="text-center">
+    <form asp-action="Index" method="post">
+        <input asp-for="Url" type="text" placeholder="Введите URL" size="80"/>
+        <input type="submit" value="Отправить"/>
+    </form>
+</div>

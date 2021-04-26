@@ -1,0 +1,16 @@
+﻿@{
+    Layout = "_Layout";
+}
+@model ResultWebsitePerfomace;
+<div class="container">
+
+    <table>
+        @foreach (var i in Model.WebsiteResponceTime)
+        {
+            <tr>
+                <td width="90%">@i.Key</td>
+                <td>@i.Value</td>
+            </tr>
+        }
+    </table>
+</div>
